@@ -11,7 +11,7 @@
      일단 어느정도 성과는 보지 않았나??? 하는 생각이 있습니다. 솔직히 성과가 있다 라고 하면 좀 주제넘는것 같기도 하네요ㅋㅋㅋ
      어쨌든 젬마4라는 모델이 추론을 켰을 때의 성능이 오히려 비추론일떄보다 좋지 않았던 점을 생각하면 마지막에는 추론성능보다는 조금 더 점수가 잘 나왔기 때문에 좋지 않았나 생각합니다. 
 
-          <img width="1458" height="433" alt="image" src="https://github.com/user-attachments/assets/4d03a771-125b-4e47-a374-b7a214a8be62" />
+    <img width="1458" height="433" alt="image" src="https://github.com/user-attachments/assets/4d03a771-125b-4e47-a374-b7a214a8be62" />
 
     
 - [x]  **2. 전체 코드에서 가장 핵심적이거나 가장 복잡하고 이해하기 어려운 부분에 작성된 
@@ -28,7 +28,7 @@
 그럴걸 생각하면 지금도 어지럽기 때문에 그래도 퀵 스타트가 도움이 많이 되지 않았나 그렇게 생각을 해서 넣었습니다. 
 
 
-     <img width="604" height="739" alt="image" src="https://github.com/user-attachments/assets/4539ea7f-eecf-488a-ba14-77cd3338675c" />
+<img width="604" height="739" alt="image" src="https://github.com/user-attachments/assets/4539ea7f-eecf-488a-ba14-77cd3338675c" />
 
         
 - [x]  **3. 에러가 난 부분을 디버깅하여 문제를 해결한 기록을 남겼거나
@@ -42,7 +42,7 @@
      그걸 조금이라도 빨리 알았더라면 바로 3차에서 한 추론 강화를 위한 학습을 좀 더 수월하게 할수 있었을텐데...
      프로젝트 있어서의 가장 큰 반성점이기도 하고 어쨌든 이걸 토해 새로운 쪽으로의 접근이 가능해서 좋았던것 같습니다. 
 
-          <img width="1456" height="303" alt="image" src="https://github.com/user-attachments/assets/2d571731-69a3-41ed-87de-06d18310913b" />
+<img width="1456" height="303" alt="image" src="https://github.com/user-attachments/assets/2d571731-69a3-41ed-87de-06d18310913b" />
 
         
 - [x]  **4. 회고를 잘 작성했나요?**
@@ -54,7 +54,7 @@
 회고 부분은 이번에는 프로젝트를 한다고 정말 시간이 모자라서 간단히 소감 위주로 작성을 했습니다.
 전체 작업 내용은 제일 위에 목차를 통해 소개하려고 했는데...사실 이것도 3차 4차 시도까지 적는걸 깜빡했습니다 
 
-        - <img width="1440" height="438" alt="image" src="https://github.com/user-attachments/assets/9847645d-965f-4b95-bd53-f36ef1a1f6df" />
+<img width="1440" height="438" alt="image" src="https://github.com/user-attachments/assets/9847645d-965f-4b95-bd53-f36ef1a1f6df" />
 
 
 
