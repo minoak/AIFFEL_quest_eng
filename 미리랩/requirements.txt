@@ -8,9 +8,22 @@ langchain
 langchain-openai
 langchain-community
 
-# RAG (reuse bge-m3 + Chroma)
-chromadb
-sentence-transformers
+# Structured output / retry
+pydantic
+tenacity
 
-# Demo UI
-streamlit
+# Data: HF persona dataset (parquet shard sampling)
+datasets
+huggingface_hub
+pandas
+pyarrow
+
+# RAG (optional module: OpenAI embeddings + Chroma)
+chromadb
+
+# Demo UI + visualization
+streamlit>=1.32
+plotly
+networkx
+pyvis
+matplotlib
