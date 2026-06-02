@@ -1,0 +1,16 @@
+# Core LLM
+openai
+python-dotenv
+
+# Agent orchestration
+langgraph
+langchain
+langchain-openai
+langchain-community
+
+# RAG (reuse bge-m3 + Chroma)
+chromadb
+sentence-transformers
+
+# Demo UI
+streamlit
