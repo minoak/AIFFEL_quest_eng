@@ -10,6 +10,7 @@
 2. `pip install -r requirements.txt` 명령어를 실행합니다.
    
 추가 : (setup.bat설치는 라이브러리 설치에요 이거 하셔도 됩니다) 
+
 4. `.env.example` 파일에서 `.env` 파일명을 파일로 바꾸고 OpenAI 키를 붙여넣은 후 `python check.py`를 실행합니다.( 여기서 api키를 관리!)
 
 `[OK]`가 표시되면 환경 설정이 완료된 것입니다.
