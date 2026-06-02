@@ -7,7 +7,7 @@
 ## 설정 (3단계)
 
 1. `git clone <repo-url>` 명령어를 실행하고 VS Code에서 폴더를 엽니다.
-2. `pip install -r requirements.txt` 명령어를 실행합니다.
+2. `pip install -r requirements.txt` 명령어를 실행합니다. (setup.bat설치는 라이브러리 설치에요 이거 하셔도 됩니다) 
 
 3. `.env.example` 파일에서 `.env` 파일명을 파일로 바꾸고 OpenAI 키를 붙여넣은 후 `python check.py`를 실행합니다.( 여기서 api키를 관리!)
 
