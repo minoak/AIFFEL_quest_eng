@@ -1,0 +1,29 @@
+# Core LLM
+openai
+python-dotenv
+
+# Agent orchestration
+langgraph
+langchain
+langchain-openai
+langchain-community
+
+# Structured output / retry
+pydantic
+tenacity
+
+# Data: HF persona dataset (parquet shard sampling)
+datasets
+huggingface_hub
+pandas
+pyarrow
+
+# RAG (optional module: OpenAI embeddings + Chroma)
+chromadb
+
+# Demo UI + visualization
+streamlit>=1.32
+plotly
+networkx
+pyvis
+matplotlib
