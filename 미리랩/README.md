@@ -22,7 +22,7 @@
 
 - `state.py` - 공유 상태 스키마 파일입니다. 팀 전체의 약속이므로 필드 이름을 임의로 변경하지 마십시오.
 
-- `rag/` - 페르소나 그라운딩 검색(bge-m3 + Chroma)
+- `rag/` - 페르소나 그라운딩 검색(bge-m3(임시) + Chroma)
 - `data/` - 페르소나 코퍼스/원본 문서
 - `graph/` - LangGraph 노드 + 어셈블리(React -> Interact -> Aggregate)
 - `eval/` - 어블레이션: 그라운딩 켜기/끄기
