@@ -6,8 +6,8 @@
 
 
 [최종 HUD — 4 bin 대표 프레임 (안전/주의/위험/치명)]
-(<img width="2299" height="1160" alt="hud_samples" src="https://github.com/user-attachments/assets/9f8bcd71-f896-41ba-8dfb-cfe28bc51768" />
-)
+<img width="2299" height="1160" alt="hud_samples" src="https://github.com/user-attachments/assets/9f8bcd71-f896-41ba-8dfb-cfe28bc51768" />
+
 
 
 ## 결과
