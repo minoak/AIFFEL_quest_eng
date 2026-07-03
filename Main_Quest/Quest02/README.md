@@ -5,7 +5,7 @@
 **AIFFEL DLthon** · 2026.04.22 ~ 04.24 (3일) · **후처리 파이프라인 전체 솔로 설계·구현**
 
 
-![최종 HUD — 4 bin 대표 프레임 (안전/주의/위험/치명)](assets/hud_samples.png)
+[최종 HUD — 4 bin 대표 프레임 (안전/주의/위험/치명)](assets/hud_samples.png)
 
 
 ## 결과
