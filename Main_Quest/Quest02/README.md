@@ -14,7 +14,7 @@
 
 | 지표 | 값 |
 |---|---|
-| Domain 10장 GT 판정 | **Exact 9/9 (100%)** |
+| Domain 판정 (GT 보유 9장) | **Exact 9/9 (100%)** |
 | Segmentation mIoU(fg) | 0.7845 ± 0.0100 (5-fold) |
 | Lane Mark IoU | 0.3611 (5-fold ensemble, +2.2%p) |
 | 시스템 버전 | v2.6 → **v6** (7회 전면 개편) |
@@ -43,7 +43,9 @@ Seg Ensemble (5-fold majority vote)
 Mobileye/OpenPilot 등 업계 관행 리서치가 같은 방향으로 수렴: bbox foot-point 기준, lane-width 정규화, 해상도 독립적인 parametric zone. 원근 사다리꼴 4-zone corridor로 구현.
 
 **H6 — "모르는 건 모른다고 말한다"**
-측정 불가 상황(lateral > 70%)을 억지로 판정하지 않고 guard 처리. 이 원칙을 확장한 것이 v6("신뢰 구간만 말하기")이며, 최종 Exact 9/9는 이 단계에서 달성.
+측정 불가 상황(lateral > 70%)을 억지로 판정하지 않고 guard 처리. 
+최종 Exact 9/9는 이 guard까지 적용한 v5에서 달성. 
+이 원칙을 전면 확장한 실험이 v6("신뢰 구간만 말하기")이며, 답한 케이스의 정확도 대신 커버리지를 희생한다(Exact 5/9).
 
 ## 기록된 실패
 
