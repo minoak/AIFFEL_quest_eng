@@ -1,7 +1,7 @@
 """
 ego_corridor.py — VP + ego_lane 기반 4-zone 사다리꼴 corridor 생성 및 bbox zone 분류.
 
-3 agent 리서치 수렴 설계:
+설계 (Mobileye/OpenPilot 등 업계 관행 리서치 수렴):
     - 전략: Clamp/additive layer (v5 유지, zone 은 보정)
     - Bbox foot-point (bottom-center) 가 노면 접지점
     - Lane-width 정규화된 signed distance (해상도 불변)
@@ -11,7 +11,7 @@ ego_corridor.py — VP + ego_lane 기반 4-zone 사다리꼴 corridor 생성 및
     y = vp_y + alpha * (H - vp_y)   # parametric (해상도 독립)
     x = vp_x + (y - vp_y) / (H - vp_y) * (x_bottom - vp_x)  # lane 보간
 
-Safeguards (3 agent 공통):
+Safeguards:
     - VP confidence < 0.3 → corridor 사용 불가 (None 반환)
     - Frame 3 갓길 regression 방지: LDW 활성 frame 은 호출측에서 zone confirmation 비활성
     - Moveable (class 4) 만 체크
@@ -155,7 +155,7 @@ def classify_zone(
 ) -> Tuple[int, Dict]:
     """Bbox 를 zone severity (0~3) 로 분류.
 
-    로직 (Agent 2 합의):
+    로직:
         1. Anchor = bbox bottom-center (foot point)
         2. Foot 이 어느 zone 에 있나 결정 (inner 부터 순서대로)
         3. Soft promote: bbox 중 더 안쪽 zone 에 30%+ 겹치면 승급

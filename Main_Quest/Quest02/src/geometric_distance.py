@@ -49,7 +49,7 @@ OBJECT_WIDTH_M = {
     'person':   0.5,
 }
 
-# 거리 bin (Agent 3 권고, 2+ estimator 합의 기준)
+# 거리 bin (2+ estimator 합의 기준)
 DISTANCE_BINS = [(0, 5), (5, 15), (15, 30), (30, float('inf'))]
 DISTANCE_BIN_NAMES = ['<5m', '5-15m', '15-30m', '>30m']
 
