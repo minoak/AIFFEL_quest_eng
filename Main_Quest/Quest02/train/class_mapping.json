@@ -1,0 +1,20 @@
+{
+  "cat_id_to_label": {
+    "1323880": 1,
+    "1323881": 2,
+    "1323882": 3,
+    "1323884": 4,
+    "1323885": 5,
+    "1329681": 6
+  },
+  "label_to_name": {
+    "0": "Background",
+    "1": "Undrivable",
+    "2": "Road",
+    "3": "Lane Mark",
+    "4": "Moveable",
+    "5": "My bike",
+    "6": "Rider"
+  },
+  "num_classes": 7
+}

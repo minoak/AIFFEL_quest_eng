@@ -1,0 +1,10 @@
+# 데이터셋 원본·전처리 산출물 (Kaggle 에서 받아 로컬 생성 — 용량)
+train/www.acmeai.tech ODataset 1 - Motorcycle Night Ride Dataset/
+train/masks/
+
+# 모델 체크포인트 (~93MB/개 — Hugging Face Hub 로 배포)
+*.pth
+
+# 학습 부산물
+train/lane_focus_5fold_curves.png
+__pycache__/
