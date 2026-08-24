@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "source": "v5_testset_results.json — Test 30장 holdout 평가 결과에서 해당 3장을 그대로 추출 (재계산 없음)",
+    "pipeline": "Risk Assessor v5 (src/RISK_ASSESSOR_V5.ipynb 과 동일 로직) — U-Net R34 Lane Focus 5-fold ensemble segmentation + Depth Pro depth + 4 warning (FCW/LDW/BSW/HEAD), bin = max",
+    "mask_note": "samples/masks/ 는 데이터셋 제공 GT 라벨(uint8, 픽셀값=클래스 0~6). mIoU_ensemble/mIoU_single 은 이 GT 대비 seg 품질.",
+    "bins": [
+      "안전",
+      "주의",
+      "위험",
+      "치명"
+    ]
+  },
+  "results": [
+    {
+      "img_id": 99,
+      "filename": "night ride (98).png",
+      "bin": "안전",
+      "active_warnings": [],
+      "top_warning": null,
+      "top_reason": "",
+      "d_front_m": 18.07,
+      "d_left_m": 25.43,
+      "d_right_m": 11.53,
+      "n_moveable": 4,
+      "n_ego_filt": 0,
+      "mIoU_ensemble": 0.6746882563603963,
+      "mIoU_single": 0.6643305043983163
+    },
+    {
+      "img_id": 153,
+      "filename": "Screenshot (417).png",
+      "bin": "주의",
+      "active_warnings": [
+        "BSW"
+      ],
+      "top_warning": "BSW",
+      "top_reason": "우측 4.9m",
+      "d_front_m": 27.47,
+      "d_left_m": 8.97,
+      "d_right_m": 4.92,
+      "n_moveable": 3,
+      "n_ego_filt": 0,
+      "mIoU_ensemble": 0.6028285249344563,
+      "mIoU_single": 0.6009532273114845
+    },
+    {
+      "img_id": 177,
+      "filename": "Screenshot (322).png",
+      "bin": "위험",
+      "active_warnings": [
+        "LDW"
+      ],
+      "top_warning": "LDW",
+      "top_reason": "좌측 이탈 (49%)",
+      "d_front_m": 14.67,
+      "d_left_m": 18.94,
+      "d_right_m": 34.62,
+      "n_moveable": 5,
+      "n_ego_filt": 0,
+      "mIoU_ensemble": 0.6540418412442447,
+      "mIoU_single": 0.6823587898697026
+    }
+  ]
+}
