@@ -59,6 +59,18 @@
   → 이후 metric 거리값을 판정에 직접 쓰지 않고 4-zone 구역 판정으로 변환해 소비하는 구조로 바꾸면서 Depth Pro를 재도입, 최종 채택 ([모델정보](./모델정보.ipynb) 참고).
 - **v3.x hierarchical + 파라미터 튜닝**: 구조를 바꾸지 않는 튜닝은 정확도를 2/10까지 악화시켰다. local optimum의 전형.
 
+## 직접 돌려보기
+
+1. **환경** — `pip install -r requirements.txt` (Python 3.13 에서 검증, GPU 권장)
+2. **체크포인트** — 학습된 U-Net R34 5-fold 를 Hugging Face Hub 에서 받는다:
+   ```python
+   from huggingface_hub import hf_hub_download
+   ckpts = [hf_hub_download('minoak/motorcycle-night-lane-focus', f'lane_focus_fold{i}_best.pth')
+            for i in range(5)]
+   ```
+3. **추론** — [src/RISK_ASSESSOR_V5.ipynb](./src/RISK_ASSESSOR_V5.ipynb) 를 열어 [samples/](./samples) 의 이미지 3장(안전/주의/위험 각 1장)으로 실행하고, 결과를 `samples/expected_outputs.json` 과 대조한다.
+4. **학습 재현** — [train/](./train) 참고. Kaggle 데이터 다운로드 → 전처리 → 5-fold 학습 (fold당 13~16분).
+
 ## 파일 안내
 
 | 파일 | 내용 |
@@ -69,6 +81,9 @@
 | [데이터탐색.ipynb](./데이터탐색.ipynb) | EDA  클래스 분포 (Lane Mark 0.6% 병목), 도메인 특성 |
 | [src/RISK_ASSESSOR_V5.ipynb](./src/RISK_ASSESSOR_V5.ipynb) | **실행 코드**  v5 최종 self-contained 배포 노트북 (외부 .py import 불필요) |
 | [src/](./src) | v5 모듈 소스  ego_corridor (4-zone) · geometric_distance (3-estimator fusion) · hud_v5_clean (HUD 렌더) · simple_tracker (IoU tracker) |
+| [train/](./train) | **세그멘테이션 학습 코드**  Lane Focus 5-fold 재현 (전처리 → 학습, 실제 학습 기록 포함) |
+| [samples/](./samples) | 샘플 3장 (안전/주의/위험) + GT 마스크 + 기대 출력 JSON |
+| [requirements.txt](./requirements.txt) | 실행 환경 (버전 고정) |
 
 > ⚠️ 노트북 용량이 커서 GitHub 렌더링이 느릴 수 있습니다. [nbviewer](https://nbviewer.org/)에 URL을 붙여 넣으면 안정적으로 열립니다.
 
